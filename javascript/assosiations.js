@@ -9,7 +9,7 @@ const maxItemAssociation = (items) => {
             const productAll = items.filter((item) => item.includes(product)).reduce((acc, item) => [...acc, ...item], [])
             associationCache[product] = [...new Set(productAll)]
             return [...new Set([...acc, ...productAll])]
-        }, []).sort((a, b) => a.length - b.length > 0)
-    })
+        }, [])
+    }).sort()
     return assocArray.sort()
 }
