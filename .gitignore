@@ -2,4 +2,6 @@
 /.idea/
 /javascript/tree/package-lock.json
 /javascript/get-path/package-lock.json
+/graphql/node_modules
+/graphql/dist/
 /.editorconfig
